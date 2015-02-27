@@ -1,0 +1,36 @@
+# eclipse
+/.classpath
+/.project
+/.settings
+
+# intellij
+/*.iml
+/*.ipr
+/*.iws
+/.idea/
+
+# netbeans
+/nbproject
+
+# vim
+.*.sw[a-p]
+
+# maven
+/target
+dependency-reduced-pom.xml
+
+# ant
+/build.xml
+
+# other build files
+/build
+/bin
+/classes
+/dist
+/manifest.mf
+/out
+*.class
+
+# os related files
+.DS_Store
+desktop.ini
