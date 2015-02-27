@@ -7,7 +7,7 @@
 
     <groupId>com.djdch.log4j</groupId>
     <artifactId>log4j-staticshutdown</artifactId>
-    <version>0.0.1-SNAPSHOT</version>
+    <version>1.0.0</version>
 
     <name>Log4j-StaticShutdown</name>
     <description>Provide a ShutdownRegistrationStrategy for Log4j 2 designed to be manually invoked.</description>
