@@ -20,7 +20,7 @@ Add the dependency in your `pom.xml` file:
     <dependency>
         <groupId>com.djdch.log4j</groupId>
         <artifactId>log4j-staticshutdown</artifactId>
-        <version>1.0.1-SNAPSHOT</version>
+        <version>1.1.0</version>
     </dependency>
 
 Add this static initialization block in your *Main* class:
