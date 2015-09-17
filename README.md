@@ -17,17 +17,21 @@ Build your project
 
 Add the dependency in your `pom.xml` file:
 
-    <dependency>
-        <groupId>com.djdch.log4j</groupId>
-        <artifactId>log4j-staticshutdown</artifactId>
-        <version>1.1.0</version>
-    </dependency>
+```xml
+<dependency>
+    <groupId>com.djdch.log4j</groupId>
+    <artifactId>log4j-staticshutdown</artifactId>
+    <version>1.1.0</version>
+</dependency>
+```
 
 Add this static initialization block in your *Main* class:
 
-    static {
-        System.setProperty("log4j.shutdownCallbackRegistry", "com.djdch.log4j.StaticShutdownCallbackRegistry");
-    }
+```java
+static {
+    System.setProperty("log4j.shutdownCallbackRegistry", "com.djdch.log4j.StaticShutdownCallbackRegistry");
+}
+```
 
 > WARNING! Even if this works, there is no warranty that it always will, since there is no way to ensure that
 > your Main class will be loaded before Log4j (and it won't work if that doesn't happen). To be safe, you should
@@ -35,4 +39,6 @@ Add this static initialization block in your *Main* class:
 
 Then, you can invoke manually the `StaticShutdownCallbackRegistry` in your shutdown procedure:
 
-    StaticShutdownCallbackRegistry.invoke();
+```java
+StaticShutdownCallbackRegistry.invoke();
+```
